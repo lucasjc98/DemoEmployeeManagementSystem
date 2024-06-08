@@ -1,0 +1,6 @@
+@DEMS.Api_HostAddress = http://localhost:5033
+
+GET {{DEMS.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
