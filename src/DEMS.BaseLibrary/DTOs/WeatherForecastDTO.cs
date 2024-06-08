@@ -1,6 +1,6 @@
-namespace DEMS.Api
+namespace DEMS.BaseLibrary.DTOs
 {
-    public class WeatherForecast
+    public class WeatherForecastDTO
     {
         public DateOnly Date { get; set; }
 

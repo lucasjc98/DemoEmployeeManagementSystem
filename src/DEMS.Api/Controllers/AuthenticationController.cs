@@ -23,5 +23,13 @@ namespace DEMS.Api.Controllers
             var result = await accountInterface.SignInAsync(user);
             return Ok(result);
         }
+
+        [HttpPost("refresh-token")]
+        public async Task<IActionResult> RefreshTokenAsync(RefreshTokenDTO token)
+        {
+            if (token == null) return BadRequest("Model is empty");
+            var result = await accountInterface.RefreshTokenAsync(token);
+            return Ok(result);
+        }
     }
 }
