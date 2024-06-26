@@ -8,3 +8,12 @@
 @using Microsoft.JSInterop
 @using DEMS.App
 @using DEMS.App.Layout
+
+@using DEMS.BaseLibrary.DTOs
+@using DEMS.AppLibrary.Helpers
+@using DEMS.AppLibrary.Services.Contracts
+@using Microsoft.AspNetCore.Components.Authorization
+
+@inject AuthenticationStateProvider AuthStateProvider
+@inject IUserAccountService accountService
+@inject NavigationManager NavigationManager
